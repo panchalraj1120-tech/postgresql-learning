@@ -23,16 +23,16 @@ add column department varchar(100) default null;
 
 update employee
 set department = CASE empid
-	when 1 then 'BCA'
-	when 2 then 'MCA'
-	when 3 then 'B.tech'
-	when 4 then 'M.tech'
-	when 5 then 'BCA'
-	when 6 then 'B.A'
-	when 7 then 'BBA'
-	when 8 then 'BCA'
-	when 9 then 'B.A'
-	when 10 then 'B.pharma'
+	when 1 then 'IT'
+	when 2 then 'HR'
+	when 3 then 'IT'
+	when 4 then 'FINANCE'
+	when 5 then 'HR'
+	when 6 then 'MARKETING'
+	when 7 then 'HR'
+	when 8 then 'IT'
+	when 9 then 'MARKETING'
+	when 10 then 'FINANCE'
 	END
 	where empid in (1,2,3,4,5,6,7,8,9,10);
 
@@ -44,23 +44,58 @@ delete from employee
 where empid = 9;
 
 select distinct department
-from employee;
+from employee ;
 
 select emp_name , mob_no
 from employee
-where department = 'BCA'; 
+where department = 'HR'; 
 
 select * from employee
 where empid between 4 and 9;
 
 select * from employee
-where department = 'BCA'
-or department = 'MCA';
+where department = 'IT'
+or department = 'HR';
+
+select * from employee
+where department like '%H_%';
+
+
+
+select emp_name from employee
+
+select distinct department
+from employee;
+
+select emp_name from employee
+where empid >= 4;
 
 
 select * from employee
-where department like '%MC_%';
+where empid <= 4;
 
+select * from employee
+order by emp_name asc;
 
+select * from employee
+order by emp_name desc;
 
+select * from employee
+where department = 'FINANCE';
+
+select * from employee
+where age >= 20;
+
+select emp_name from employee
+where empid BETWEEN 1 and 6;
+
+select * from employee
+where department = 'HR'
+or department = 'FINANCE';
+
+select * from employee
+order by empid
+limit 4;
+
+	
 	select * from employee

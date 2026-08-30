@@ -33,6 +33,7 @@ I created an Employee database table and performed different SQL operations such
 - LIKE
 - DISTINCT
 - LIMIT
+- ORDER BY
 
 ### Conditional Logic
 - CASE WHEN

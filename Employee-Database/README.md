@@ -32,6 +32,7 @@ I created an Employee database table and performed different SQL operations such
 - BETWEEN
 - LIKE
 - DISTINCT
+- LIMIT
 
 ### Conditional Logic
 - CASE WHEN

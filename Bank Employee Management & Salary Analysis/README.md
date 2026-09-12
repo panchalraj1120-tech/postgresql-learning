@@ -1,4 +1,4 @@
-# 🏦 PostgreSQL & pgAdmin Employee Management Analysis
+# 🏦 PostgreSQL & pgAdmin Bank Employee Management Analysis
 
 A practical, hands-on SQL project exploring data definition, manipulation, pattern matching, aggregate metrics, and conditional logic using **PostgreSQL** and **pgAdmin**.
 
